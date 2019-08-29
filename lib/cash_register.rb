@@ -19,6 +19,8 @@ class CashRegister
     end
   end
 
+
+
   def apply_discount
     if @discount == 0
       return "There is no discount to apply."
@@ -28,9 +30,7 @@ class CashRegister
     end
   end
 
-  def items
-    @items
-  end
+
 
   def void_last_transaction
 
