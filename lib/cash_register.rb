@@ -16,7 +16,9 @@ class CashRegister
   end
 
   def apply_discount
-    @cash_register_with_discount = @total - @total*(@discount/100).to_int
+    
+    discount = @total*@discount/100.to_int
+    @cash_register_with_discount = @total - discount
   end
 
   def void_last_transaction
