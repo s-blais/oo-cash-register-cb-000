@@ -18,8 +18,8 @@ class CashRegister
   def apply_discount
 
     discount_amount = (@total*@discount)/100
-    @total -= discount_amount
-    return "After the discount, the total comes to $#{@total}."
+    #@total -= discount_amount
+    return "After the discount, the total comes to $#{@total -= discount_amount}."
   end
 
   def void_last_transaction
